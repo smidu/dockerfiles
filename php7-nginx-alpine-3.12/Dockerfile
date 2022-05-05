@@ -32,10 +32,12 @@ RUN mkdir -p /app
 RUN mkdir -p /var/www/html
 
 RUN mkdir -p /.composer
+RUN mkdir -p /.npm
 
 RUN chown -R nobody.nobody /app && \
   chown -R nobody.nobody /var/www/html && \
   chown -R nobody.nobody /.composer && \
+  chown -R nobody.nobody /.npm && \
   chown -R nobody.nobody /run && \
   chown -R nobody.nobody /var/lib/nginx && \
   chown -R nobody.nobody /var/log/nginx
