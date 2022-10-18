@@ -8,7 +8,6 @@ RUN apt install htop -y
 RUN apt install nano -y
 RUN apt install openvpn -y
 RUN apt install screen -y
-RUN pecl install mongodb -y
 
 RUN ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 RUN dpkg-reconfigure --frontend noninteractive tzdata
