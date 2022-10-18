@@ -2,8 +2,7 @@ FROM webdevops/php-nginx:8.0
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt install php8.0-dev -y
-RUN apt install php8.0-soap -y
+RUN apt install lsb-release ca-certificates apt-transport-https software-properties-common gnupg2 -y
 RUN apt install libxrender1 -y
 RUN apt install htop -y
 RUN apt install nano -y
